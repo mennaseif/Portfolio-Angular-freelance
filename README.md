@@ -5,7 +5,7 @@ A modern and responsive portfolio website built with **Angular**, showcasing the
 ---
 
 ## 🌐 Live Demo
-🔗 [View Portfolio on Vercel](#) *(Add your Vercel link here once deployed)*
+🔗 [View Portfolio on Vercel](#)
 
 ---
 
