@@ -1,0 +1,32 @@
+<section id="books" class="books-section fade-in py-5">
+  <div class="container text-center">
+    <h2 class="section-title gradient-text mb-4"><i class="fa-solid fa-book me-2"></i> My Books</h2>
+
+    <div class="row justify-content-center gy-4">
+      <div class="col-md-4 col-sm-6 fade-in" *ngFor="let book of books">
+        <div class="book-card shadow-sm">
+          <img [src]="book.image" [alt]="book.title" class="book-image" />
+          <div class="book-info mt-3">
+            <h5 class="gradient-text">{{ book.title }}</h5>
+            <p class="text-light-muted mb-2">{{ book.year }}</p>
+            <button class="btn btn-accent-outline mt-2" (click)="showDetails(book)">
+              <i class="fa-solid fa-circle-info me-1"></i> More Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Book Details -->
+    <div class="modal-overlay" *ngIf="selectedBook" (click)="closeDetails()"></div>
+    <div class="book-modal" *ngIf="selectedBook">
+      <div class="book-modal-content text-center">
+        <img [src]="selectedBook.image" class="modal-book-img mb-3" />
+        <h4 class="gradient-text mb-2">{{ selectedBook.title }}</h4>
+        <p class="text-light-muted mb-2">{{ selectedBook.publisher }}</p>
+        <p class="text-light mb-4">{{ selectedBook.details }}</p>
+        <button class="btn btn-accent" (click)="closeDetails()">Close</button>
+      </div>
+    </div>
+  </div>
+</section>

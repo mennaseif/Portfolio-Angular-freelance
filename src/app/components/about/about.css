@@ -1,0 +1,86 @@
+/* 🌌 Section background with animated gradient */
+.about-section {
+  position: relative;
+  overflow: hidden;
+  color: #eaf2ff;
+  background: linear-gradient(120deg, #001f4d 0%, #3a2b8c 50%, #5b2aa6 100%);
+  background-size: 200% 200%;
+  animation: aboutGradientShift 15s ease-in-out infinite;
+}
+
+/* Animate the gradient subtly */
+@keyframes aboutGradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Section title */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Text content */
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(235, 245, 255, 0.9);
+}
+
+/* 🌈 Profile Image */
+.about-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.25);
+  background: linear-gradient(135deg, #00c6ff, #7b4eff);
+  padding: 6px;
+  animation: floatProfile 6s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+.about-img:hover {
+  transform: scale(1.05);
+}
+
+/* Floating animation */
+@keyframes floatProfile {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ✨ Fade-in (if you have IntersectionObserver active) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .about-img {
+    width: 200px;
+    height: 200px;
+  }
+  .about-text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,93 @@
+/* 💙 Global Blue Theme */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7faff;
+  color: #1a1a1a;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+/* 🌈 Modern Blue–Purple Gradient Button */
+.btn-accent,
+.btn-warning,
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(0, 198, 255, 0.95), rgba(123, 78, 255, 0.95));
+  color: #ffffff !important;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 26px;
+  box-shadow: 0 6px 20px rgba(59, 46, 108, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover,
+.btn-warning:hover,
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(59, 46, 108, 0.35);
+  filter: brightness(1.1);
+}
+
+.btn-accent:active,
+.btn-warning:active,
+.btn-primary:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 14px rgba(59, 46, 108, 0.3);
+}
+
+.section-dark .btn-accent,
+.section-dark .btn-warning {
+  color: #0c0c1a;
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.4);
+}
+
+/* Scroll Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section Backgrounds */
+.section-light {
+  background: #f7faff;
+}
+
+.section-dark {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+}
+
+.section-dark h2 {
+  color: #fff;
+}

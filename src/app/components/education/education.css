@@ -1,0 +1,114 @@
+/* 🎓 Section background */
+.education-section {
+  background: linear-gradient(120deg, #0a1a3b, #2a1050);
+  background-size: 200% 200%;
+  animation: eduGradientShift 15s ease-in-out infinite;
+  color: #eaf2ff;
+}
+
+@keyframes eduGradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Title */
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Timeline layout */
+.timeline {
+  position: relative;
+  border-left: 3px solid rgba(123, 78, 255, 0.6);
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* One-by-one delay */
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: var(--delay);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.3rem;
+  top: 0.3rem;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(90deg, #00c6ff, #7b4eff);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(123, 78, 255, 0.7);
+}
+
+/* Box style */
+.timeline-content {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.3rem 1.6rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 20px rgba(10, 20, 50, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 198, 255, 0.3);
+}
+
+/* Text */
+.degree-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.edu-place {
+  font-size: 1.05rem;
+  color: rgba(200, 220, 255, 0.9);
+}
+
+.edu-date {
+  display: block;
+  font-size: 0.95rem;
+  color: rgba(173, 197, 255, 0.8);
+  margin-top: 0.5rem;
+}
+
+/* Gradient icons */
+.text-gradient {
+  background: linear-gradient(90deg, #00c6ff, #7b4eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1rem;
+  }
+  .timeline-content {
+    padding: 1rem;
+  }
+  .degree-title {
+    font-size: 1.1rem;
+  }
+}
