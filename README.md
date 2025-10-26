@@ -1,59 +1,99 @@
-# Portfolio
+# 🧠 Wafaa Soliman – Personal Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+A modern and responsive portfolio website built with **Angular**, showcasing the professional journey of **Wafaa Soliman** — Clinical & Educational Psychologist, Family Consultant, and Author.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🌐 Live Demo
+🔗 [View Portfolio on Vercel](#) *(Add your Vercel link here once deployed)*
 
+---
+
+## ✨ Features
+- 🖋️ **Beautiful Hero Section** with gradient animation and professional title  
+- 📚 **Books Section** displaying authored books with details and publisher info  
+- 💼 **Professional Experience** and **Education Timeline** with animations  
+- 🧩 **Skills Section** highlighting clinical, counseling, and research expertise  
+- 💌 **Contact Section** with clickable email, phone, and social media links  
+- 📱 **Fully Responsive** — works seamlessly on desktop, tablet, and mobile  
+- 🎨 **Custom Gradient Theme** and **Font Awesome icons** integration  
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** Angular 20  
+- **UI Framework:** Bootstrap 5  
+- **Icons:** Font Awesome  
+- **Animations:** CSS transitions + Intersection Observer  
+- **Hosting:** Vercel  
+
+---
+
+## ⚙️ Project Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone  https://github.com/mennaseif/Portfolio-Angular-freelance.git
+cd portfolio
+```
+
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
+
+### 3️⃣ Run in development mode
 ```bash
 ng serve
 ```
+Then open 👉 [http://localhost:4200](http://localhost:4200)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
+### 4️⃣ Build for production
 ```bash
 ng build
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+The production-ready files will be in:
+```
+dist/portfolio
 ```
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🚀 Deploy on Vercel
+1. Go to [vercel.com](https://vercel.com)  
+2. Import your GitHub repository  
+3. Set the following build settings:  
+   - **Build Command:** `ng build`  
+   - **Output Directory:** `dist/portfolio`  
+4. Click **Deploy** 🎉
 
-```bash
-ng e2e
+---
+
+## 📂 Folder Structure
+```
+portfolio/
+│
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── about/
+│   │   │   ├── books/
+│   │   │   ├── contact/
+│   │   │   ├── experience/
+│   │   │   ├── education/
+│   │   │   └── skills/
+│   │   └── app.component.ts
+│   ├── assets/
+│   ├── index.html
+│   └── styles.css
+│
+├── angular.json
+├── package.json
+└── README.md
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 👩‍💻 Developed By
+**Menna Seif** — Full-Stack Developer  
+📂 [GitHub](https://github.com/mennaseif)  
+💼 [LinkedIn](https://www.linkedin.com/in/menna-seif/)  
+🌍 Passionate about building elegant, scalable web applications with **Node.js**, **Angular**, and **MongoDB**.
