@@ -1,4 +1,4 @@
 {
-  "builds": [{ "src": "dist/portfolio/browser/**", "use": "@vercel/static" }],
-  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+  "outputDirectory": "dist/portfolio/browser",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
